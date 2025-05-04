@@ -1,4 +1,5 @@
 import NewsCard from "./NewsCard";
+import SectionTitle from "./SectionTitle";
 
 
 const newsList = [
@@ -56,10 +57,8 @@ const newsList = [
 export default function AsiaNews() {
     return(
         <>
-        <div className="min-h-screen mt-10 bg-gradient-to-br from-white via-blue-50 to-slate-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 p-6 sm:p-10">
-            <h1 className="text-4xl font-bold mb-10 text-gray-800 dark:text-white tracking-tight">
-            📰 Top Asia News
-            </h1>
+        <div className="min-h-screen mt-14 bg-gradient-to-br from-white via-blue-50 to-slate-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 p-6 sm:p-10">
+            <SectionTitle title="Top Football News" />
             <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {newsList.map((item, i) => (
                 <div key={i} className="h-full">

@@ -23,7 +23,8 @@ function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center bg-white p-4 transition-all duration-700">
+    <div className="min-h-screen w-full flex flex-col items-center justify-center bg-white dark:bg-gray-800 p-4 transition-all duration-700"
+>
       <button
         className="absolute top-4 left-4 text-xl text-white px-4 py-1 border border-blue-600 rounded-full bg-blue-600 hover:text-gray-800 hover:bg-white transition-colors duration-300"
         onClick={() => navigate("/")}
