@@ -5,7 +5,8 @@ import news3 from '../assets/news1.jpg';
 import SectionTitle from "./SectionTitle";
 import ContentSlider from "./ContentSlider";
 import RecentNews from "./RecentNews";
-import MainBox from "./MainBox"
+import MainBox from "./MainBox";
+import AudioSlider from './AudioSlider'
 
 const newsList = [
     {
@@ -48,6 +49,7 @@ export default function Hero() {
             ))}
             </div>
         </div>
+        <AudioSlider />
         <MainBox />
         <ContentSlider />
         </div>
