@@ -17,8 +17,8 @@ function App() {
         <Route path='/login' element={<LoginPage />} />
         <Route path='/' element={<Home />}>
           <Route path='' element={<Hero />} />
-          <Route path='news' element={<News />} />
-          <Route path='news/asia' element={<AsiaNews />}/>
+          <Route path='sport' element={<News />} />
+          <Route path='sport/football' element={<AsiaNews />}/>
         </Route>
       </Routes>
       

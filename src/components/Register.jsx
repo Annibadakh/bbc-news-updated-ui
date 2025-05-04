@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 
 import EmailPage from './EmailPage';
@@ -6,10 +6,10 @@ import PasswordPage from './PasswordPage';
 import DetailsPage from './DetailsPage';
 import LoginPage from './LoginPage';
 import bbclogo from '../assets/bbclogo.png';
-import { CheckCircle } from 'lucide-react'; 
+import { CheckCircle } from 'lucide-react';
 
 function Register() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const [step, setStep] = useState(1);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -24,16 +24,20 @@ function Register() {
 
     // Delay animation (like PhonePe style)
     setTimeout(() => {
-        setRegistered(false);
-        navigate("/login");
-        
+      setRegistered(false);
+      navigate("/login");
     }, 3000); // Allow animation before redirect
   };
 
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center bg-white p-4 transition-all duration-700">
-      <button className=" absolute top-4 left-4 text-xl text-white px-4 py-1 border border-blue-600 rounded-full bg-blue-600 hover:text-gray-800 hover:bg-white transition-colors duration-300" onClick={() => navigate("/")}>← Back to Home</button>
-      
+      <button
+        className="absolute top-4 left-4 text-xl text-white px-4 py-1 border border-blue-600 rounded-full bg-blue-600 hover:text-gray-800 hover:bg-white transition-colors duration-300"
+        onClick={() => navigate("/")}
+      >
+        ← Back to Home
+      </button>
+
       <div className="w-full max-w-xl p-8 bg-white rounded-3xl shadow-2xl relative overflow-hidden">
         {/* Logo */}
         <div className="flex justify-center mb-4">
@@ -69,6 +73,19 @@ function Register() {
             </div>
           </div>
         )}
+
+        {/* Link to Login Page */}
+        <div className="mt-4 text-center">
+          <p className="text-sm text-gray-600">
+            Have an account?{" "}
+            <span
+              className="text-indigo-500 cursor-pointer hover:text-indigo-600 font-semibold"
+              onClick={() => navigate("/login")}
+            >
+              Login here
+            </span>
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -6,15 +6,6 @@ import logo from '../assets/bbclogo.png';
 
 const navItems = {
   "/": "Home",
-  "/news": {
-    label: "News",
-    sub: {
-      "/news/asia": "Asia",
-      "/news/world": "World",
-      "/news/politics": "Politics",
-      "/news/economy": "Economy",
-    },
-  },
   "/sport": {
     label: "Sport",
     sub: {
@@ -28,6 +19,16 @@ const navItems = {
       "/sport/cycling": "Cycling",
     },
   },
+  "/news": {
+    label: "News",
+    sub: {
+      "/news/asia": "Asia",
+      "/news/world": "World",
+      "/news/politics": "Politics",
+      "/news/economy": "Economy",
+    },
+  },
+  
   "/business": {
     label: "Business",
     sub: {
