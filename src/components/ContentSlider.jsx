@@ -6,21 +6,28 @@ import SectionTitle from './SectionTitle';
 
 const data = [
   {
-    image: 'https://via.placeholder.com/600x300',
+    image: 'https://ichef.bbci.co.uk/news/480/cpsprodpb/945a/live/50441040-2720-11f0-8c66-ebf25fc2cfef.jpg.webp',
     title: 'How an earthquake changed the course of history',
     summary: 'An earthquake in 1755 had such a profound effect on the world that we are still feeling its impact today.',
     time: '29 Jul 2022',
     category: 'History'
   },
   {
-    image: 'https://via.placeholder.com/600x300',
+    image: 'https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/e53e/live/9ff47050-28f9-11f0-8f57-b7237f6a66e6.jpg.webp',
     title: "Why the Dutch don't say sorry",
     summary: "The Dutch are known for many things, including cheese, windmills, and being the world's tallest people.",
     time: '22 Sep 2022',
     category: 'Culture'
   },
   {
-    image: 'https://via.placeholder.com/600x300',
+    image: 'https://ichef.bbci.co.uk/news/480/cpsprodpb/44be/live/c88b5c80-284b-11f0-b26b-ab62c890638b.jpg.webp',
+    title: 'Watch rare sperm found by AI in IVF lab',
+    summary: 'New tech to increase IVF success rates for patients.',
+    time: '1 day ago',
+    category: 'Tech Now'
+  },
+  {
+    image: 'https://ichef.bbci.co.uk/ace/standard/480/cpsprodpb/d060/live/f8b914c0-2827-11f0-8c66-ebf25fc2cfef.png.webp',
     title: 'Watch rare sperm found by AI in IVF lab',
     summary: 'New tech to increase IVF success rates for patients.',
     time: '1 day ago',
@@ -79,7 +86,7 @@ const ContentSlider = () => {
           <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-800 overflow-hidden h-[430px] flex flex-col">
             <div className="relative">
               <img
-                src={news}
+                src={item.image}
                 alt={item.title}
                 className="w-full h-64 object-cover"
               />

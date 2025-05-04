@@ -1,4 +1,6 @@
 @import "tailwindcss";
+/* @import 'swiper/swiper-bundle.min.css'; */
+
 
 html{
     scroll-padding-top: 9rem;
