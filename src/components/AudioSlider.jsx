@@ -93,9 +93,7 @@ export default function AudioSlider() {
 
   return (
     <section className="py-8 px-4 relative">
-      <div className="flex items-center justify-between mb-4">
         <SectionTitle title="This Week in Audio" />
-      </div>
 
       <Slider {...settings}>
         {podcasts.map((item, idx) => (
