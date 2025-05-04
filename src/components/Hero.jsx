@@ -2,6 +2,8 @@ import NewsCard from "./NewsCard";
 import news1 from '../assets/news1.jpg';
 import news2 from '../assets/news1.jpg';
 import news3 from '../assets/news1.jpg';
+import SectionTitle from "./SectionTitle";
+import ContentSlider from "./ContentSlider";
 
 
 const newsList = [
@@ -33,11 +35,9 @@ const newsList = [
 
 export default function Hero() {
     return(
-        <>
+        <div className="bg-gradient-to-br from-white via-blue-50 to-slate-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 p-6 ">
         <div className="min-h-screen mt-10 bg-gradient-to-br from-white via-blue-50 to-slate-100 dark:from-gray-950 dark:via-gray-900 dark:to-gray-800 p-6 sm:p-10">
-            <h1 className="text-4xl font-bold mb-10 text-gray-800 dark:text-white tracking-tight">
-            📰 Top Stories
-            </h1>
+            <SectionTitle title="Top Stories" />
             <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {newsList.map((item, i) => (
                 <div key={i} className="h-full">
@@ -46,6 +46,7 @@ export default function Hero() {
             ))}
             </div>
         </div>
-        </>
+        <ContentSlider />
+        </div>
     )
 }

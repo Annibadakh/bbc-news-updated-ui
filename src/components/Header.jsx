@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { motion, AnimatePresence, isDragActive } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useNavigate, useLocation  } from "react-router-dom";
 import logo from '../assets/bbclogo.png';
