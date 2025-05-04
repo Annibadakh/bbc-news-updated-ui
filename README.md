@@ -17,7 +17,7 @@ This project focuses on:
 - ✅ **Fully Redesigned Home Page** with a clean and modern layout
 - ✅ **Responsive Header and Navigation Bar**
 - ✅ **Redesigned Slider Layout** to showcase section content
-- ✅ **Dark Mode Toggle** for accessibility and preference
+- ✅ **Auto Dark Mode Toggle based on browser setting** for accessibility and preference
 - ✅ **Modular Component-Based Design** using React
 - ✅ **Card-Based News Box Layout**
 - ✅ **Modern Login and Register Pages**
