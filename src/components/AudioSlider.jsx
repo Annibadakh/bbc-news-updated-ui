@@ -79,7 +79,10 @@ export default function AudioSlider() {
       {
         breakpoint: 768,
         settings: {
+          slidesToScroll: 1,
           slidesToShow: 1,
+          centerMode: true,
+          centerPadding: "35px"
         },
       },
       {
